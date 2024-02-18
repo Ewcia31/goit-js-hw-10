@@ -1,0 +1,76 @@
+html {
+  background: url(./background.jpg);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cat-card {
+  border: solid 4px gray;
+  background: #fff;
+  margin-top: 30px;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.cat-description {
+  max-width: 50%;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.cat-info img {
+  max-width: 700px;
+  max-height: 700px;
+  width: auto;
+  height: auto;
+  border: solid 3px;
+  border-color: gray;
+}
+
+.breed-select {
+  display: flex;
+  margin: 0 auto;
+  max-width: 500px;
+  margin-top: 30px;
+}
+
+.cat-info {
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader.hidden {
+  display: none;
+}
+
+.error.hidden {
+  display: none;
+}
